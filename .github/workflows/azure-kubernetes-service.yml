@@ -36,7 +36,7 @@ on:
 
 env:
   AZURE_CONTAINER_REGISTRY: acractions101
-  CONTAINER_NAME: azure-voting-app
+  CONTAINER_NAME: image
   RESOURCE_GROUP: aksrg
   CLUSTER_NAME: kubeactions
   DEPLOYMENT_MANIFEST_PATH: |
