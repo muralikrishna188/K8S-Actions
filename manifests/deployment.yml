@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "deploymentcentertest-9fd7"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "deploymentcentertest-9fd7"
+  template:
+    metadata:
+      labels:
+        app: "deploymentcentertest-9fd7"
+    spec:
+      containers:
+        - name: "deploymentcentertest-9fd7"
+          image: "deploymentcenter.azurecr.io/deploymentcentertest"
+          ports:
+          - containerPort: 80

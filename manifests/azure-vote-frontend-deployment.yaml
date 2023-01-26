@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: azure-vote-front
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: azure-vote-front
+  template:
+    metadata:
+      labels:
+        app: azure-vote-front
+    spec:
+      containers:
+        - name: azure-vote-front
+          image: kingoliverregistry.azurecr.io/kingoliver2
+          ports:
+            - containerPort: 80
+          env:
+            - name: REDIS
+              value: "azure-vote-back"

@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "kingoliver2-5755"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "kingoliver2-5755"
+  template:
+    metadata:
+      labels:
+        app: "kingoliver2-5755"
+    spec:
+      containers:
+        - name: "kingoliver2-5755"
+          image: "kingoliver2.azurecr.io/kingoliver2"
+          ports:
+          - containerPort: 80
