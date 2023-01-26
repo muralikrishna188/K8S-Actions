@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: azure-vote-front
-          image: acractions101.azurecr.io/azure-voting-app
+          image: acractions101.azurecr.io/image
           ports:
             - containerPort: 80
           env:
