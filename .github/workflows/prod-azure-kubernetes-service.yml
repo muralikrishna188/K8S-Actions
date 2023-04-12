@@ -35,7 +35,7 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_CONTAINER_REGISTRY: kubeacr102.azurecr.io
+  AZURE_CONTAINER_REGISTRY: kubeacr102
   CONTAINER_NAME: image
   RESOURCE_GROUP: ukaksrg
   CLUSTER_NAME: aksgit
