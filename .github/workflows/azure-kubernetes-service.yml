@@ -37,7 +37,7 @@ on:
 env:
   AZURE_CONTAINER_REGISTRY: acractions101
   CONTAINER_NAME: image
-  RESOURCE_GROUP: aksrg
+  RESOURCE_GROUP: ukaksrg
   CLUSTER_NAME: kubeactions
   DEPLOYMENT_MANIFEST_PATH: |
         ./manifests/azure-vote-backend-deployment.yaml
