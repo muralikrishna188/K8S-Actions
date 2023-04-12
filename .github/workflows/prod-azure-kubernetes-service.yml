@@ -36,7 +36,7 @@ on:
 
 env:
   AZURE_CONTAINER_REGISTRY: kubeacr102.azurecr.io
-  CONTAINER_NAME: Image
+  CONTAINER_NAME: image
   RESOURCE_GROUP: ukaksrg
   CLUSTER_NAME: aksgit
   DEPLOYMENT_MANIFEST_PATH: |
