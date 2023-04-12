@@ -27,7 +27,7 @@
 # For more samples to get started with GitHub Action workflows to deploy to Azure, refer to https://github.com/Azure/actions-workflow-samples
 # For more options with the actions used below please refer to https://github.com/Azure/login
 
-name: Build and deploy an app to AKS
+name: UK-Build and deploy an app to AKS
 
 on:
   push:
@@ -35,10 +35,10 @@ on:
   workflow_dispatch:
 
 env:
-  AZURE_CONTAINER_REGISTRY: votingappacr101
+  AZURE_CONTAINER_REGISTRY: kubeacr102
   CONTAINER_NAME: image
-  RESOURCE_GROUP: VotingAppCluster_group
-  CLUSTER_NAME: VotingAppCluster
+  RESOURCE_GROUP: ukaksrg
+  CLUSTER_NAME: aksgit
   DEPLOYMENT_MANIFEST_PATH: |
         ./manifests/azure-vote-backend-deployment.yaml
         ./manifests/azure-vote-frontend-deployment.yaml
